@@ -34,6 +34,29 @@ else
 {
     wypisz.innerHTML='bledne paliwo';
 }
+wypisz.innerHTML='<br>';
+
+var cenaOgorka=5;
+var cenaSalaty=10;
+var cenaPomidora=4.75;
+
+var koszyk=2*cenaOgorka+cenaSalaty+4*cenaPomidora;
+
+if(koszyk>50)
+{
+    wypisz.innerHTML+='cena koszyka jest wieksza od 50 zl i wynosi' + cena + 'zł';
+}
+else if(koszyk<50)
+{
+    wypisz.innerHTML+='cena koszyka jest mniejsza od 50 zl i wynosi' + cena + 'zł';
+}
+else
+{
+    wypisz.innerHTML='cena koszyka wynosi'+cena+'zl'; 
+}
+
+
+
     </script>
 
 
