@@ -34,7 +34,7 @@ else
 {
     wypisz.innerHTML='bledne paliwo';
 }
-wypisz.innerHTML='<br>';
+wypisz.innerHTML+='<br>';
 
 var cenaOgorka=5;
 var cenaSalaty=10;
@@ -52,10 +52,11 @@ else if(koszyk<50)
 }
 else
 {
-    wypisz.innerHTML='cena koszyka wynosi'+cena+'zl'; 
+    wypisz.innerHTML+='cena koszyka wynosi'+cena+'zl'; 
 }
-wypisz.innerHTML='<br>';
+wypisz.innerHTML+='<br>';
 
+wypisz.innerHTML+='Petla for <br>';
 for(var i=1; i<11; i++)
 {
     wypisz.innerHTML+="licznik i="+i+"<br>";
@@ -63,7 +64,6 @@ for(var i=1; i<11; i++)
 
 
 
-wypisz.innerHTML='Petla for <br>';
 var j=0;
 while(j<10)
 {
@@ -73,24 +73,13 @@ while(j<10)
 
 
 
-
-
-wypisz.innerHTML='Petla DO WHILE <br>';
+wypisz.innerHTML+='Petla DO WHILE <br>';
 var k=0;
 do
 {
     wypisz.innerHTML+='zmienna k ='+k+'<br>';
     k++;
 }while(k<10);
-
-
-
-
-
-
-
-
-
 
 
 </script>
