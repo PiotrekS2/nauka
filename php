@@ -11,11 +11,13 @@
 $a=5;
 
 if($a%0)
+{
     echo'liczba jest parzysta';
-
+}
 else($a)
+{
 echo 'liczba nieparzysta';
-
+}
 
 
 
