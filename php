@@ -8,21 +8,16 @@
 <body>
 <?php
 
-$a=5;
+$a = 5;
 
-if($a%0)
-{
-    echo'liczba jest parzysta';
+if ($a % 2 == 0)
+     {
+    echo 'liczba jest parzysta';
+} 
+else 
+    {
+    echo 'liczba nieparzysta';
 }
-else()
-{
-echo 'liczba nieparzysta';
-}
-
-
-
-
-
 
 ?>
 
