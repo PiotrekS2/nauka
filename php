@@ -8,14 +8,13 @@
 <body>
 <?php
 
-$a=liczba
-echo='podaj liczbe: '
+$a=5;
 
+if($a%0)
+    echo'liczba jest parzysta';
 
-
-if()
-
-
+else($a)
+echo 'liczba nieparzysta';
 
 
 
