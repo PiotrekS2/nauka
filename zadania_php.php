@@ -7,6 +7,9 @@
 </head>
 <body>
 <?php
+echo'zadanie1:';
+echo'<br>';
+echo'<br>';
 
 $a = 5;
 
@@ -19,6 +22,7 @@ else
     echo 'liczba nieparzysta';
 }
 
+echo'<br>';
 echo'<br>';
 echo'zadanie2:';
 echo'<br>';
@@ -39,6 +43,27 @@ else
     }
 echo'<br>';
 echo'<br>';
+echo'zadanie3:';
+echo'<br>';
+echo'<br>';
+
+$d=7;
+if($d >= 1 && $d<=10)
+    {
+        echo'liczba jest z przedzailu <1,10>';
+    }
+    else if($d >= 17 && $d<=21) 
+    {
+        echo' liczba jest z przedzailu <17,21>>';
+    }
+
+echo'<br>';
+echo'<br>';
+echo'zadanie4:';
+echo'<br>';
+echo'<br>';
+
+
 
 
 
