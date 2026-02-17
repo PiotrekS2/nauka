@@ -26,12 +26,12 @@ echo'<br>';
 
 
 
-$b=5
-$c=3
+$b=5;
+$c=3;
 
 if($a % $c == 0)
     {
-        echo 'liczby sie przez siebie dziela'
+        echo 'liczby sie przez siebie dziela';
     }
 else
     {
