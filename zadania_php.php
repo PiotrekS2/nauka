@@ -110,7 +110,7 @@ echo'<br>';
 echo'<br>';
 
 
-$haslo='1234567';
+$haslo='haso';
 if(strlen($haslo) < 5)
     {
         echo'bardzo slabe';
@@ -154,6 +154,60 @@ else if ($rok % 4 == 0 && $rok % 100 != 0 || $rok % 400 == 0)
     }
 
 
+echo'<br>';
+echo'<br>';
+echo'zadanie 8:';
+echo'<br>';
+echo'<br>';
+
+
+$l1=5;
+$l2=1;
+$l3=10;
+
+if($l1 > $l3 && $l2 > $l3)
+    {
+        echo'najmniejsza liczba jest: liczba nr 3';
+    }
+    else if($l2 > $l1 && $l3 > $l1)
+        {
+            echo'najmniejsza liczba jest: liczba nr 1' ;
+        }
+    else 
+        {
+            echo'najmniejsza liczba jset: liczba nr 2 ';
+        }
+
+
+echo'<br>';
+echo'<br>';
+echo'zadanie 9:';
+echo'<br>';
+echo'<br>';
+
+
+$w1=8;
+$w2=2;
+$w3=8;
+
+if($w1 == $w2 )
+{
+echo'dwie z podanych liczb sa takie same';
+}
+else if($w1 == $w3)
+    {
+        echo'dwie z podanych liczb sa takie same';
+    }
+else if($w2 == $w3)
+    {
+        echo'dwie z podanych liczb sa takie same';
+    }
+else
+    {
+        echo'nie wystepuja dwie takie same liczby';
+    }
+
+    
 ?>
 </body>
 </html>
