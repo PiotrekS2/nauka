@@ -84,6 +84,7 @@ do
 
 
 wypisz.innerHTML+='<br>';
+wypisz.innerHTML+='Zadane 1:';
 wypisz.innerHTML+='<br>';
 
 
@@ -97,6 +98,137 @@ if (b != 0) {
 } else {
     wypisz.innerHTML+=("Błąd: Nie można dzielić przez zero.");
 }
+
+wypisz.innerHTML+='<br>';
+wypisz.innerHTML+='Zadane 2:';
+wypisz.innerHTML+='<br>';
+
+var c=7;
+var d=8;
+
+if (b == 0 || c== 0)
+{
+    wypisz.innerHTML+=("Błąd: Nie można dzielić przez zero.");
+}
+else
+{
+ var x = a / b + c / d;
+wypisz.innerHTML += "Wynik: " + x;
+}
+
+wypisz.innerHTML+='<br>';
+wypisz.innerHTML+='Zadane 3:';
+wypisz.innerHTML+='<br>';
+
+if ( (b - 4)  == 0)
+{
+    wypisz.innerHTML+=("Błąd: Nie można dzielić przez zero.");
+}
+else
+{
+    var x = (a+6) / (b-4);
+    wypisz.innerHTML += "Wynik: " + x;
+}
+
+wypisz.innerHTML+='<br>';
+wypisz.innerHTML+='Zadane 4:';
+wypisz.innerHTML+='<br>';
+
+var e=5;
+if(e % 2 == 0)
+{
+    wypisz.innerHTML+='liczba jest parzysta';
+}
+else
+{
+     wypisz.innerHTML+='liczba nie jest parzysta';
+}
+
+wypisz.innerHTML+='<br>';
+wypisz.innerHTML+='Zadane 5:';
+wypisz.innerHTML+='<br>';
+
+if (a % b == 0)
+{
+    wypisz.innerHTML+='liczba jest podzielan przez druga i wynosi: '+ x;
+}
+else
+{
+    wypisz.innerHTML+='liczba jest podzielan przez druga ';
+}
+
+wypisz.innerHTML+='<br>';
+wypisz.innerHTML+='Zadane 6:';
+wypisz.innerHTML+='<br>';
+
+var liczba= 2;
+
+if (liczba > 0)
+{
+   wypisz.innerHTML+= 'liczba wieksza od zera';
+}
+else if( liczba < 0)
+{
+      wypisz.innerHTML+= 'liczba mniejsza od zera';
+}
+else
+{
+wypisz.innerHTML+='liczba jest rowna 0';
+}
+
+
+wypisz.innerHTML+='<br>';
+wypisz.innerHTML+='Zadane 7:';
+wypisz.innerHTML+='<br>';
+
+var wiek=10;
+
+if(wiek < 11)
+{
+    wypisz.innerHTML+='dziecko';
+}
+else if(wiek > 11 && wiek < 17)
+{
+    wypisz.innerHTML+='nastolatek';
+}
+else
+{
+wypisz.innerHTML+='dorosly';
+}
+
+wypisz.innerHTML+='<br>';
+wypisz.innerHTML+='Zadane 8:';
+wypisz.innerHTML+='<br>';
+
+
+var haslo=11;
+
+if(haslo<5)
+{
+    wypisz.innerHTML+='bardzo slabe';
+}
+else if(haslo > 5 && haslo < 8)
+{
+    wypisz.innerHTML+='slabe';
+}
+else if(haslo > 9 && haslo < 11)
+{
+    wypisz.innerHTML+='silne';
+}
+else if(haslo >= 11)
+{
+    wypisz.innerHTML+='bardzo silne';
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
