@@ -9,11 +9,33 @@
     <p id="wypisz"></p>
 <script>
 var wypisz=document.getElementById('wypisz');
-
+wypisz.innerHTML+= "zadanie 1" + "<br>";
 for (var i = 1; i <= 10; i++) 
 {
   wypisz.innerHTML+= i + "<br>";
 }
+wypisz.innerHTML+= "zadanie 2" + "<br>";
+for (var i = 10; i >= 1; i--)
+{
+  wypisz.innerHTML+= i + "<br>";
+}
+wypisz.innerHTML+= "zadanie 3" + "<br>";
+
+var suma = 0;
+
+for(var i = 1; i <= 10; i++)
+{
+    suma+= i;
+}
+wypisz.innerHTML+="suma pierwsyzch 10 liczb calkowitych wynosi :"+ suma + "<br>";
+wypisz.innerHTML+= "zadanie 4" + "<br>";
+for (var i = 2; i <=20; i+=2)
+{
+    wypisz.innerHTML+=i+ "<br>";
+}
+wypisz.innerHTML+= "zadanie 5" + "<br>";
+
+
 
 
 
