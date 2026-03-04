@@ -207,6 +207,24 @@ else
         echo'nie wystepuja dwie takie same liczby';
     }
 
+
+echo'<br>';
+echo'<br>';
+echo'zadanie 11:';
+echo'<br>';
+echo'<br>';
+
+for($i= 0; $i <=10; $i++)
+{
+    for($j=0;$j<=10;$j++)
+        {
+            echo $i*$j;
+        }
+        echo "<br>";
+}
+
+
+
     
 ?>
 </body>

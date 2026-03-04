@@ -66,7 +66,39 @@ wypisz.innerHTML+= "zadanie 7" + "<br>";
     }
     wypisz.innerHTML+="liczba cegiel= "+sumaa+ "<br>";
 
-wypisz.innerHTML+= "zadanie 8" + "<br>";
+wypisz.innerHTML+= "zadanie 11,12,15,16" + "<br>";
+var n=5;
+var silnia=1;
+for(var i = 1; i <= n; i++)
+{
+    silnia *= i;
+    
+} 
+wypisz.innerHTML+=silnia;
+wypisz.innerHTML+="<br>";
+
+var pierwszaliczba=2;
+var n=10;
+for(var i=1; i<=n;i++)
+{
+    wypisz.innerHTML+=pierwszaliczba;
+    pierwszaliczba=pierwszaliczba*pierwszaliczba;
+    
+wypisz.innerHTML+="<br>";
+}
+wypisz.innerHTML+="<br>";
+
+var warstwy=10;
+var lba= 1;
+
+for(var i=1; i<=warstwy; i++)
+{
+    for( var j=1;j <=i; j++)
+{
+    wypisz.innerHTML+=lba;
+}
+    wypisz.innerHTML+="<br>";
+}
 
 
 
