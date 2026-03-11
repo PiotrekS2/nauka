@@ -210,7 +210,7 @@ else
 
 echo'<br>';
 echo'<br>';
-echo'zadanie 11:';
+echo'zadanie 11 petla:';
 echo'<br>';
 echo'<br>';
 
@@ -222,6 +222,40 @@ for($i= 0; $i <=10; $i++)
         }
         echo "<br>";
 }
+echo'<br>';
+echo'<br>';
+echo'zadanie 12 petla:';
+echo'<br>';
+echo'<br>';
+for($i= 1; $i <=10; $i++)
+    {
+        for($j=1; $j<=10; $j++)
+            {
+        echo" * ";
+            }
+        echo"<br>";
+    }
+echo'<br>';
+echo'<br>';
+echo'zadanie 13 petla:';
+echo'<br>';
+echo'<br>';
+echo "**********";
+echo'<br>';
+for($i= 1; $i <=4; $i++)
+    {
+    echo"*.................*";
+    echo'<br>';
+    }
+echo "**********";
+echo'<br>';
+echo'<br>';
+echo'zadanie 14 petla:';
+echo'<br>';
+echo'<br>';
+
+
+
 
 
 
