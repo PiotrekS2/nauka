@@ -10,17 +10,41 @@
     <script>
     var wypisz=document.getElementById('wynik');
 
-tab[0]=1;
-tab[1]=2;
 var tablica= new Array(1,2,3,4,5,6,7,8,9,10)
-wypisz.innerHTML+="tablica[0]="+tab[0];
-wypisz.innerHTML+="tablica[5]="+tab[5];
-
-
-
-
-
-
+wypisz.innerHTML+="tablica[0]="+tablica[0];
+wypisz.innerHTML+="tablica[5]="+tablica[5]+"<br>";
+for(var i=0;i<tablica.length;i++)
+{
+    wypisz.innerHTML+="tablica["+i+"]="+tablica[i];
+}
+wypisz.innerHTML+="<br>";
+var tablica2= new Array("Poniedzialek","wtorek","sroda","czwartek","piatek","sobota","niedziela")
+for(var i=0;i<tablica2.length;i++)
+{
+    wypisz.innerHTML+=" ["+i+"]="+tablica2[i];
+}
+wypisz.innerHTML+="<br>";
+var j=0;
+while(j<tablica2.length)
+{
+    wypisz.innerHTML+=" ["+j+"]="+tablica2[j];
+    j++;
+}
+wypisz.innerHTML+="<br>";
+var tablica3= new Array("Poniedzialek","wtorek",3,"czwartek","piatek",6,"niedziela")
+for(var i=0;i<tablica2.length;i++)
+{
+    wypisz.innerHTML+=" tablica=["+i+"]="+tablica3[i];
+}
+wypisz.innerHTML+="<br>";
+var tab4=new Array(10)
+var j=0;
+while(j<tab4.length)
+{
+    tab4[j]=(j+1);
+    wypisz.innerHTML+="tab4= ["+j+"]="+tab4[j];
+    j++;
+}
 
 
     
