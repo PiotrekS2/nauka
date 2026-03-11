@@ -28,7 +28,13 @@ foreach($tab4 as $element)
     {
     echo $element." ";
     }
-
+echo"<br>";
+    $i=0;
+while($i<count($tab3))
+    {
+        echo"tab3[".$i."]=".$tab3[$i]." ";
+        $i++;
+    }
 
 
 
