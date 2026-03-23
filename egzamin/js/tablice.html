@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+ <p id="wynik"></p>
+ <script> 
+  var wypisz=document.getElementById("wynik");
+
+  wypisz.innerHTML+="<h2>Tablice</h2>"
+
+  
+  
+  var tablica = new Array(1,2,3,4,5,6,7,8,9,10)
+  wypisz.innerHTML+="tablica[0]=" +tablica[0] +"<br>";    
+  wypisz.innerHTML+="tablica[5]=" +tablica[5] +"<br>";   
+  
+  for(var i=0; i<tablica.length; i++)
+   {
+       wypisz.innerHTML+="tablica["+i+"]=" +tablica[i] +"<br>";
+   }
+
+   wypisz.innerHTML+="<br>";
+   wypisz.innerHTML+="<br>";
+   wypisz.innerHTML+="<br>";
+   wypisz.innerHTML+="<br>";
+
+
+ var tablica2 = new Array("Poniedziałek", "Wtorek", "Środa", "Czwartek", "Piątek", "Sobota", "Niedziela")
+ for(var i=0; i<tablica2.length; i++)
+   {
+       wypisz.innerHTML+="tablica2["+i+"]=" +tablica2[i] +"<br>";
+   }
+ 
+ wypisz.innerHTML+="<br>";
+ var j=0;
+ while(j<tablica2.length)
+ {
+    wypisz.innerHTML+="tablica2["+j+"]=" +tablica2[j] +"<br>";
+    j++;
+ }
+ 
+ wypisz.innerHTML+="<br>";
+ wypisz.innerHTML+="<br>";
+ 
+  var tablica3 = new Array("Poniedziałek", "Wtorek", 3, "Czwartek", "Piątek", 6, "Niedziela")
+  var j=0;
+  while(j<tablica3.length)
+  {
+    wypisz.innerHTML+="tablica3["+j+"]=" +tablica3[j] +"<br>";
+    j++;
+  }
+
+  wypisz.innerHTML+="<br>";
+  wypisz.innerHTML+="<br>";
+
+  var tablica4 = new Array(10)
+  var j=0;
+  while(j<tablica4.length)
+  {
+    tablica4[j]=(j+1);
+    wypisz.innerHTML+="tablica4["+j+"]=" +tablica4[j] +"<br>";
+    j++;
+  }
+
+ 
+
+ </script>    
+
+    
+</body>
+</html>

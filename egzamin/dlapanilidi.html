@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<p id="wynik"></p>
+    <script>
+    var wypisz=document.getElementById('wynik');
+
+    var celsius = prompt("Podaj temperaturę w °C:");
+var fahrenheit = (celsius * 9/5) + 32;
+
+wypisz.innerHTML+= celsius + "°C = " + fahrenheit + "°F";
+wypisz.innerHTML+= "<br>";
+var celsius = (fahrenheit - 32) * 5/9;
+(celsius * 9/5) + 32;
+(fahrenheit - 32) * 5/9;
+wypisz.innerHTML+= fahrenheit + "°F = " + celsius + "°C";
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+        </script>
+</body>
+</html>
