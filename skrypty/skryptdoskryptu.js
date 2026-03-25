@@ -1,0 +1,106 @@
+var wypisz=document.getElementById('wbw');
+wypisz.innerHTML+= "zadanie 1" + "<br>";
+for (var i = 1; i <= 10; i++) 
+{
+  wypisz.innerHTML+= i + "<br>";
+}
+wypisz.innerHTML+= "zadanie 2" + "<br>";
+for (var i = 10; i >= 1; i--)
+{
+  wypisz.innerHTML+= i + "<br>";
+}
+wypisz.innerHTML+= "zadanie 3" + "<br>";
+
+var suma = 0;
+
+for(var i = 1; i <= 10; i++)
+{
+    suma+= i;
+}
+wypisz.innerHTML+="suma pierwsyzch 10 liczb calkowitych wynosi :"+ suma + "<br>";
+wypisz.innerHTML+= "zadanie 4" + "<br>";
+for (var i = 2; i <=20; i+=2)
+{
+    wypisz.innerHTML+=i+ "<br>";
+}
+wypisz.innerHTML+= "zadanie 5" + "<br>";
+
+var x= 12;
+var y= 100;
+var kwota= 0;
+
+for (var i =1; i<=x;i++)
+{
+    kwota += y;
+    kwota *=1.08;
+}
+wypisz.innerHTML+='kwota: '+kwota + "<br>";
+wypisz.innerHTML+= "zadanie 6" + "<br>";
+
+
+for(var element=5; element <= 1000; element += 10)
+{
+
+suma += element;
+}
+wypisz.innerHTML += "Suma = " + suma+ "<br>";
+
+
+
+wypisz.innerHTML+= "zadanie 7" + "<br>";
+
+
+    var sumaa = 0;
+    for (var i = 10; i >= 1; i--) {
+        sumaa += i * i;
+    }
+    wypisz.innerHTML+="liczba cegiel= "+sumaa+ "<br>";
+
+wypisz.innerHTML+= "zadanie 11,12,15,16" + "<br>";
+var n=5;
+var silnia=1;
+for(var i = 1; i <= n; i++)
+{
+    silnia *= i;
+    
+} 
+wypisz.innerHTML+=silnia;
+wypisz.innerHTML+="<br>";
+
+var pierwszaliczba=2;
+var n=10;
+for(var i=1; i<=n;i++)
+{
+    wypisz.innerHTML+=pierwszaliczba;
+    pierwszaliczba=pierwszaliczba*pierwszaliczba;
+    
+wypisz.innerHTML+="<br>";
+}
+wypisz.innerHTML+="<br>";
+
+var warstwy=10;
+var lba= 1;
+
+for(var i=1; i<=warstwy; i++)
+{
+    for( var j=1;j <=i; j++)
+{
+    wypisz.innerHTML+=lba;
+}
+    wypisz.innerHTML+="<br>";
+}
+
+
+wypisz.innerHTML+="<br>"
+wypisz.innerHTML+="zad16"
+wypisz.innerHTML+="<br>"
+wypisz.innerHTML+="----------------";
+wypisz.innerHTML+="<br>"
+var n = 10;
+for (var i = 0; i < n; i++) 
+{
+wypisz.innerHTML+="|oooooooooo|";
+wypisz.innerHTML+="<br>"
+
+}
+wypisz.innerHTML+="----------------";
