@@ -81,6 +81,43 @@ function dzielenie($m,$n)
 }
 $o=dzielenie(5,3);
 echo"wynik dzielenia to: ".$o;
+echo"<br>";
+echo"<br>";
+echo"zadanie5";
+echo"<br>";
+echo"<br>";
+
+function gra($gracz1,$gracz2)
+{
+    if($gracz1)
+        {
+
+        }
+    else if()
+        {
+
+        }
+    else
+        {
+            
+        }
+}
+
+
+
+echo gra("kamien", "nozyce"); 
+echo"<br>";
+echo gra("papier", "nozyce"); 
+echo"<br>";
+echo gra("kamien", "kamien"); 
+echo"<br>";
+
+
+echo"<br>";
+echo"<br>";
+echo"zadanie6";
+echo"<br>";
+echo"<br>";
 
 
 

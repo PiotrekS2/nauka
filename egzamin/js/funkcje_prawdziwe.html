@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funkcje</title>
+</head>
+<body>
+ <p id="wynik"></p>
+    <script>
+    var wypisz=document.getElementById('wynik');
+function Witaj()
+{
+    wypisz.innerHTML+="<p>witaj</p>";
+}
+Witaj();
+
+function Witaj2(imie)
+{
+    wypisz.innerHTML+="<p>witaj "+imie+"</p>";
+}
+Witaj2("Arek");
+Witaj2("Przemek");
+wypisz.innerHTML+="dodawanie";
+function Dod(a,b)
+{
+    wypisz.innerHTML+="<p>"+a+"+"+b+"="+(a+b)+"</p>";
+}
+Dod(5,4);
+Dod(123456,632234);
+
+wypisz.innerHTML+="odejmowanie";
+function Odejmowanie(a,b)
+{
+    wypisz.innerHTML+="<p>"+a+"-"+b+"="+(a-b)+"</p>";
+}
+Odejmowanie(8,5);
+Odejmowanie(78345,23165);
+wypisz.innerHTML+="mnozenie";
+function Mnozenie(a,b)
+{
+    wypisz.innerHTML+="<p>"+a+"*"+b+"="+(a*b)+"</p>";
+}
+Mnozenie(5,9);
+Mnozenie(12441,7543);
+wypisz.innerHTML+="dzielenie";
+function Dzielenie(a,b)
+{
+    if(b!=0)
+{
+wypisz.innerHTML+="<p>"+a+"/"+b+"="+(a/b)+"</p>";
+
+}
+else
+{
+    wypisz.innerHTML+="<p>b nie moze byc zerem</p>";
+}
+}
+Dzielenie(100,5);
+Dzielenie(41242,6231);
+wypisz.innerHTML+="reszta z dzielenia";
+function Reszta(a,b)
+{
+    wypisz.innerHTML+="<p>"+a+"%"+b+"="+(a%b)+"</p>";
+}
+Reszta(7,3);
+Reszta(52312,5743);
+
+
+
+function Silnia(n)
+{
+    silnia=1;
+    for(var i=1; i<=n; i++)
+{
+    silnia*=i;
+}
+wypisz.innerHTML+="<p>"+"silnia z "+n+" to "+silnia+"</p>";
+}
+Silnia(5);
+Silnia(10);
+Silnia(4);
+
+
+function Oblicz(a,b,c)
+{
+    delta;
+    if(delta>0)
+{
+    Math.sqrt(delta)
+    var x1 = -b - sqrt(delta) / (2 * a);
+}
+    else if(delta=0)
+{
+    var x0 = -b / (2 * a);
+}
+    else
+{
+    wypisz.innerHTML+="Delta ujemna";
+}
+}
+Oblicz(6,4,8);
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
