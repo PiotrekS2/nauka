@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="wynik"></p>
+<script>
+var wypisz=document.getElementById("wynik");
+wypisz.innerHTML+="<h1>obiekt</h1>"
+
+
+function Osoba(imie,nazwisko,wiek)
+{
+    this.imie=imie;
+    this.nazwisko=nazwisko;
+    this.wiek=wiek;
+
+}
+
+var osoba1= new Osoba("Jan","Kowalski",26);
+var osoba2= new Osoba("rogI","iksńleL",12);
+
+wypisz.innerHTML+="imie: "+osoba1.imie+"<br>";
+wypisz.innerHTML+="nazwisko: "+osoba1.nazwisko+"<br>";
+wypisz.innerHTML+="wiek: "+osoba1.wiek+"<br>"+"<br>"+"<br>"+"<br>";
+
+
+wypisz.innerHTML+="imie: "+osoba2.imie+"<br>";
+wypisz.innerHTML+="nazwisko: "+osoba2.nazwisko+"<br>";
+wypisz.innerHTML+="wiek: "+osoba2.wiek+"<br>"+"<br>"+"<br>";
+
+
+function WypiszDane(obiekt)
+{    for(x in obiekt)
+{
+    wypisz.innerHTML+=obiekt[x]+" ";
+}
+}
+var Osoba3= new Osoba("Adam","Samsel",18);
+WypiszDane(Osoba3);
+wypisz.innerHTML+="<br>"
+
+
+function Samochod(marka,model,pojemnosc,rok,kolor)
+{
+    this.marka=marka;
+    this.model=model;
+    this.pojemnosc=pojemnosc;
+    this.rok=rok;
+    this.kolor=kolor;
+    
+}
+var samochod1= new Samochod("Ford","Fiesta",1.6,2004,"Czarny");
+var samochod2= new Samochod("Citroen","C3-VTR",1.6,2006,"Srebrny");
+
+
+wypisz.innerHTML+="Marka: "+samochod1.marka+"<br>";
+wypisz.innerHTML+="Model: "+samochod1.model+"<br>";
+wypisz.innerHTML+="Pojemnosc: "+samochod1.pojemnosc+"<br>";
+wypisz.innerHTML+="Rok: "+samochod1.rok+"<br>";
+wypisz.innerHTML+="Kolor: "+samochod1.kolor+"<br>";
+
+WypiszDane(samochod2);
+
+
+
+
+</script>
+
+</body>
+</html>
