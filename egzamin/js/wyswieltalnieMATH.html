@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<p id="kontener1"></p>
+<p id="kontener2"></p>
+<script>
+var matma=document.getElementById("kontener1");
+
+matma.innerHTML+="Funkcje matematyczne wbudowane w JS<br>"
+var liczba=prompt("podaj liczbe:","0")
+//var liczba=1;
+
+matma.innerHTML+="<br> Wartosc bezwzgledna z "+liczba+"funcka Math.abs"+Math.abs(liczba)+"<br>";
+matma.innerHTML+="<br> zaokraglanie"+liczba+"Math.round"+Math.round(liczba)+"<br>";
+matma.innerHTML+="<br> zaokraglanie"+liczba+"W gore Math.ceil"+Math.ceil(liczba)+"<br>";
+matma.innerHTML+="<br> zaokraglanie"+liczba+"w dol z Math.floor"+Math.floor(liczba)+"<br>";
+matma.innerHTML+="<br> lcizba podniesiona do potegi 2 z "+liczba+"Math.pow"+Math.pow(liczba,2)+"<br>";
+matma.innerHTML+="<br> pierwiastek z "+liczba+"Math.sqrt"+Math.sqrt(liczba)+"<br>";
+matma.innerHTML+="<br> liczba pi Math.PI"+Math.PI+"<br>";
+matma.innerHTML+="<br> losowa liczba z przedzialu od 1 do 10 Math.random"+Math.random()*10+"<br>";
+matma.innerHTML+="<br> liczba pi Math.PI"+Math.PI+"zaokraglanie do 2 miejsc po przecinku"+Math.round(Math.PI*100)+"<br>";
+matma.innerHTML+="<br> losowa liczba z przedzailu od 1 do 10 Math.random"+(Math.random()*(10-(-10))+(-10))+"<br>";
+//                                                                                        (max przedzail-min przedzail)+min przedzial
+
+
+var data=document.getElementById("kontener2");
+
+data.innerHTML+="Wyswietlenie obecnej daty wraz z godzina i strefa czasowa:<br> "+Date()+"<br>";
+var d1=new Date();
+data.innerHTML+="wyswietlanie obecnej daty z obiektu:<br>"+d1+"<br>";
+var d2=new Date(1);
+data.innerHTML+="wyswietlanie daty z obiektu z parametrem 1 milisekundy od daty poczatkowej:<br>"+d2+"<br>";
+var d3=new Date(1000);
+data.innerHTML+="wyswietlanie daty z obiektu z parametrem 1000 milisekund od daty poczatkowej:<br>"+d3+"<br>";
+
+
+</script>
+
+
+    
+</body>
+</html>
