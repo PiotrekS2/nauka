@@ -37,6 +37,30 @@ var d2=new Date(1);
 data.innerHTML+="wyswietlanie daty z obiektu z parametrem 1 milisekundy od daty poczatkowej:<br>"+d2+"<br>";
 var d3=new Date(1000);
 data.innerHTML+="wyswietlanie daty z obiektu z parametrem 1000 milisekund od daty poczatkowej:<br>"+d3+"<br>";
+var d4=new Date(1000*3600*24*365);
+data.innerHTML+="wyswietlanie daty z obiektu z parametrem 1 rok od daty poczatkowej:<br>"+d4+"<br>";
+var d5=new Date(1997,3,24);
+data.innerHTML+="wyswietlanie daty: <br>"+d5+"<br>";
+var d6=new Date(1977,3,24,2,30,45);
+data.innerHTML+="wyswietlanie daty: <br>"+d6+"<br>";
+var d7=d6.getDate()+"."+d6.getMonth()+"."+d6.getFullYear();
+data.innerHTML+="wyswietlanie daty: <br>"+d7+"<br>";
+var d8=d6.getDate()+"."+(d6.getMonth()+1)+"."+d6.getFullYear();
+data.innerHTML+="wyswietlanie daty: <br>"+d8+"<br>";
+var d9=d6.getHours()+":"+d6.getMinutes()+":"+d6.getSeconds();
+data.innerHTML+="wyswietlanie daty: <br>"+d9+"<br>";
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 </script>
