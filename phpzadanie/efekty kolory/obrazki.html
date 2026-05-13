@@ -46,10 +46,14 @@ obraz2.style.filter="grayscale(100%)"
 <input type="range" min="0" max="100" value="50" id="swak"><br>
 
 
-<button>Zastosuj</button>
+<button onclick="Filtr2()">Zastosuj</button>
 
 <script>
+function Filtr2(){
+    var wartosc=document.getElementById("swak").value;
+    document.getElementById("obraz3").style.filter=`opacity(${wartosc}%)`;
 
+}
 
 
 
@@ -59,12 +63,19 @@ obraz2.style.filter="grayscale(100%)"
 </section>
 
 <section id="blok4">
-<img src="zolw.jpg" alt="Żółw w wodzie">
+<img src="zolw.jpg" alt="Żółw w wodzie" id="obraz4">
 
-<input type="range" min="0" max="250"  id="swak"><br>
-<button>Zastosuj</button>
+<input type="range" min="0" max="250"  id="swak2"><br>
+<button onclick="Filtr3()">Zastosuj</button>
 
+<script>
+function Filtr3(){
+    var wartosc=document.getElementById("swak2").value;
+    document.getElementById("obraz4").style.filter=`brightness(${wartosc}%)`;
 
+}
+
+</script>
 
 </section>
 
