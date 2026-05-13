@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <link rel="stylesheet" href="styl.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Efekty obrazow</title>
+</head>
+<body>
+<header id="baner">
+<h2>Efekty na obrazach</h2>
+
+</header>
+
+<section id="blok1">
+<img src="pszczola.jpg" alt="pszczoła na fioletowym kwiatku" id="obraz1"><br>
+
+<input type="radio" name="wybor" id="blur">Blur<br>
+<input type="radio" name="wybor"id="sepia">Sepia<br>
+<input type="radio" name="wybor" id="negatyw">Negatyw<br>
+<button onclick="Filtr()">Zastosuj</button>
+</section>
+
+<section id="blok2">
+<img src="pomarancza.jpg" alt="drzewo pomarańczy" id="obraz2"><br>
+<button onclick="Zmiana1()">Kolorowy</button>
+<button onclick="Zmiana2()">Czarno-biały</button>
+
+<script>
+    var obraz2=document.getElementById("obraz2");
+function Zmiana1(){
+obraz2.style.filter="grayscale(0%)"
+}
+function Zmiana2(){
+obraz2.style.filter="grayscale(100%)"
+}
+</script>
+
+
+
+</section>
+
+<section id="blok3">
+<img src="owoce.jpg" alt="Kosz pełen owoców" id="obraz3">
+
+<input type="range" min="0" max="100" value="50" id="swak"><br>
+
+
+<button>Zastosuj</button>
+
+<script>
+
+
+
+
+</script>
+
+
+</section>
+
+<section id="blok4">
+<img src="zolw.jpg" alt="Żółw w wodzie">
+
+<input type="range" min="0" max="250"  id="swak"><br>
+<button>Zastosuj</button>
+
+
+
+</section>
+
+
+<footer id="stopka">
+<p>
+<a href="http://www.css.com/">Zobacz inne efekty obrazu</a>
+</p>
+<p>Strone wykonal: 0000000000</p>
+</footer>
+
+
+
+
+
+<script>
+function Filtr()
+{
+    var blur=document.getElementById("blur").checked;
+    var sepia=document.getElementById("sepia").checked;
+    var negatyw=document.getElementById("negatyw").checked;
+    var obraz=document.getElementById("obraz1");
+
+
+    if(blur==true)
+{
+    obraz.style.filter="blur(5px)";
+}
+    else if(sepia==true)
+{
+    obraz.style.filter="sepia(100%)"
+}
+    else if(negatyw==true)
+{
+    obraz.style.filter="invert(100%)"
+}
+
+
+
+}
+
+
+
+
+
+
+
+</script>
+
+
+    
+</body>
+</html>
